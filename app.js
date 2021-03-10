@@ -15,8 +15,8 @@ function clickHandler(){
     fetch(getTranslationUrl(inputText))           //processing i/p
     .then(response => response.json())
     .then(json => {
-        // var translatedTxt =json.contents.translated 
-        // outputDiv.innerHTML= translatedTxt;
+        var translatedTxt =json.contents.translated 
+        outputDiv.innerHTML= translatedTxt;
         console.log(json)
     })
     .catch(err => console.log('error detected', err));      //error handling
