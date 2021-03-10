@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+ /* following style will be applied to every element */
+ *, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+ }
+
+ .pagewrap{
+    display: flex;
+
+    /*vertically stack children*/
+    flex-direction: column;
+
+    /* expand to take full height of page */
+    /* min-height overrides both height & max-height */
+    min-height: 100vh; 
+ }
+
+ main{
+    flex-grow: 1;
+  }
+/*****css variable*****/
+:root{
+    --primary-color:#1D4ED8;
+    --secondary:#FACC15;
+    --dark-grey:#6B7280;
+    --off-white:#FAFAFA; 
+
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0px;
+    
+}
+
+
+.navigation{
+    background-color: var(--primary-color);
+    font-family: 'Akaya Telivigala', cursive;
+    padding: 1rem;    
+}
+nav a{
+    color: yellow;
+    font-size: 3rem;
+    /* padding-top: 2rem; */
+    text-decoration: none;
+}
+
+.container-fluid{
+    /* padding: 5rem 10rem 11rem 10rem; */
+    /* background-color: yellow; */
+    background-image: url('/images/mimage.jpeg');
+    background-repeat: no-repeat; 
+    background-position: center;
+
+}
+.container{
+    max-width: 900px;
+    padding: 0 1rem;
+    margin: auto;
+}
+.outer-container{
+    padding: 1rem;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.translator{
+    max-width: 538px;
+    background-color: var(--primary-color);  
+    height: 400px;
+    padding: 20px;
+    margin: auto;
+    overflow: hidden;  
+}
+
+
+button{
+    background-color: yellow;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    font-size: 18px;
+    width:75%;
+    margin-bottom: 12px;
+    
+}
+
+button:hover {background-color: #fffc36}
+
+
+
+#output, #txt-input{
+    border: 2px solid var(--primary-color);
+    width: 80%;
+    height: 18vh;
+    font-size: 1.5rem;
+    background-color: white; 
+    margin: auto;
+}
+
+
+.footer-content{
+    
+    background-color: var(--primary-color);
+    padding: 10px;
+    color: yellow;
+    
+}
+.footer-content a{
+    font-family: 'Akaya Telivigala', cursive;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.center{
+    text-align: center;
+}

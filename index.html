@@ -5,8 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minion Translator</title>
+
+    <link href="/style.css" rel="stylesheet"/>
 </head>
 <body>
-    <h1>Minion Translator</h1>
+    <div class="pagewrap">
+        <!-- navigation bar -->
+        <nav class="navigation  flex">
+            <a href="/" class="nav-brand">Minion Translator</a>
+        </nav>
+
+
+        <main>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="outer-container">
+                        <div class="translator flex">
+                            <textarea id="txt-input" placeholder="enter the text"></textarea>
+                            <button id="btn-input">Translate</button>
+                            
+                            <div id="output" class="otext"></div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="footer-content center">
+            &lt;/&gt; by <a href="https://akshayr.netlify.app/" target="_blank" class="">Akshay</a> 
+            </div>
+        </footer>
+    </div>
+   
+
+
+    <script src="/app.js" type="text/javascript"></script>
 </body>
 </html>
